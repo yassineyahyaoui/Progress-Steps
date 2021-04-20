@@ -36,7 +36,7 @@ body {
   width: 350px;
 }
 
-.progress-container:before {
+.progress-container::before {
   content: "";
   background-color: var(--line-border-empty);
   position: absolute;
@@ -57,6 +57,7 @@ body {
   height: 4px;
   width: 0%;
   transition: 0.4s ease;
+  z-index: -1;
 }
 
 .circle {
