@@ -34,7 +34,7 @@ function update() {
 
   const actives = document.querySelectorAll('.active');
 
-  progress.style.width = (actives.length - 1) * 100 + "%";
+  progress.style.width = (actives.length - 1) / (circles.length - 1) * 100 + "%";
 
   if (currentActive === 1) {
     prev.disabled = true;
@@ -44,4 +44,5 @@ function update() {
     prev.disabled = false;
     next.disabled = false;
   }
+  console.log(currentActive);
 }
